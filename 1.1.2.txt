@@ -1,0 +1,46 @@
+
+import java.util.Scanner;
+
+public class Main
+
+{
+
+public static void main(String... args)
+
+{
+
+Scanner in = new Scanner(System.in);
+
+System.out.println("Input a: ");
+
+double a = in.nextDouble();
+
+System.out.println("Input b: ");
+
+double b = in.nextDouble();
+
+System.out.println("Input c: ");
+
+double c = in.nextDouble();
+
+
+
+if( a == 0 || (Math.pow(b,2) + 4*a*c) < 0)
+
+{
+
+    System.out.println("Error");
+
+    System.exit(0);
+
+}
+
+
+double rezult = ((b + Math.sqrt(Math.pow(b,2) + 4*a*c))/2*a) - Math.pow(a,3)*c + Math.pow(b, -2);
+
+System.out.printf("a = %.1f \nb = %.1f \nc = %.1f \nRezult = %.3f \n",a , b, c, rezult);
+
+
+}
+
+}
