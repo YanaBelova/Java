@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+
+public class Main
+{
+
+    
+	public static void main(String[] args) {
+
+	    Scanner in = new Scanner(System.in);
+
+	    System.out.println("Ââåäèòå êîîðäèíàòû (x;y) òî÷êè À: ");
+
+	    double x1 = in.nextDouble();
+
+	    double y1 = in.nextDouble();
+
+	    System.out.println("Ââåäèòå êîîðäèíàòû (x;y) òî÷êè B: ");
+
+	    double x2 = in.nextDouble();
+
+	    double y2 = in.nextDouble();
+
+	    System.out.println("Ââåäèòå êîîðäèíàòû (x;y) òî÷êè Ñ: ");
+
+	    double x3 = in.nextDouble();
+
+	    double y3 = in.nextDouble();
+
+	    double k = (y1-y2)/(x1-x2);
+
+	    double b = y1 - k*x1;
+
+            System.out.println("Ñîñòàâèì óðàâíåíèå ïðÿìîé ïðîõîäÿùåé ÷åðåç òî÷êè À è Â: " + y1 +"=" +k + "*" + x1 + "+" +b);
+
+	    String check = (y3 == k*x3 + b)?"Òî÷êà Ñ ïðèíàäëåæèò ïðÿìîé ÀÂ": "Òî÷êà íå ïðèíàäëåæèò ïðÿìîé ÀÂ";
+
+	    System.out.println(check);
+
+	}
+
+}
