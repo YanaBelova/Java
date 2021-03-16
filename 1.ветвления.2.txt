@@ -38,18 +38,18 @@ public class Main
 
 	    Scanner in = new Scanner(System.in);
 
-	    System.out.println("Введите первую пару чисел:");
+	    System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ ГЇГҐГ°ГўГіГѕ ГЇГ Г°Гі Г·ГЁГ±ГҐГ«:");
 
 	    double a = in.nextDouble();
 
 	    double b = in.nextDouble();
-	    System.out.println("Введите вторую пару чисел:");
+	    System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ ГўГІГ®Г°ГіГѕ ГЇГ Г°Гі Г·ГЁГ±ГҐГ«:");
 
 	    double c = in.nextDouble();
 
 	    double d = in.nextDouble();
 
-	    System.out.println("Наименьшее число в первой паре: " + min(a,b) + "\nНаименьшее число во второй паре: " + min (c,d));
+	    System.out.println("ГЌГ ГЁГ¬ГҐГ­ГјГёГҐГҐ Г·ГЁГ±Г«Г® Гў ГЇГҐГ°ГўГ®Г© ГЇГ Г°ГҐ: " + min(a,b) + "\nГЌГ ГЁГ¬ГҐГ­ГјГёГҐГҐ Г·ГЁГ±Г«Г® ГўГ® ГўГІГ®Г°Г®Г© ГЇГ Г°ГҐ: " + min (c,d));
 
 	    System.out.println("Rezult " + max (min(a,b), min(c,d)));
 
