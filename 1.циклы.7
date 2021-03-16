@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main
+{
+    static void dividers(int m, int n)
+    {
+        for (int i=m; i<=n; i++)
+        {
+            for(int divider = 2; divider<i; divider++)
+            {
+                  if (i%divider == 0)
+                {
+                 System.out.println("divider of number "+ i + " is "+ divider);
+                }
+            }
+        }
+    }
+    
+	public static void main(String[] args) {
+	    Scanner in = new Scanner(System.in);
+	    System.out.println("Input m: ");
+	    int m = in.nextInt();
+	    System.out.println("Input n: ");
+	    int n = in.nextInt();
+	    dividers(m, n);
+	}
+}
