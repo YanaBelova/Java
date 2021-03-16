@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+
+public class Main
+{
+
+    
+	public static void main(String[] args) {
+
+	    Scanner in = new Scanner(System.in);
+
+	    System.out.println("Đŕçěĺđ ďđ˙ěîóăîëüíîăî îňâĺđńňč˙ (Ŕ;Â): ");
+
+	    double a = in.nextDouble();
+	    double b = in.nextDouble();
+
+		System.out.println("Đŕçěĺđ ęčđďč÷ŕ (x;y;z): ");
+
+		double x = in.nextDouble();
+
+		double y = in.nextDouble();
+
+		double z = in.nextDouble();
+
+
+        if ((x<=a && y<=b) || (y<=a && x<=b) || (y<=a && z<=b) || (z<=a && y<=b) || (x<=a && z<=b) || (z<=a && x<=b))
+
+	    System.out.println("Ęčđďč÷ ďđîéäĺň ÷ĺđĺç îňâĺđńčĺ");
+
+	    else
+ 
+	    System.out.println("Ęčđďč÷ íĺ ďđîéäĺň ÷ĺđĺç îňâĺđńčĺ");
+
+	}
+
+}
