@@ -11,15 +11,15 @@ public class Main
 
 	    Scanner in = new Scanner(System.in);
 
-	    System.out.println("Введите x: ");
+	    System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ x: ");
 
 	    double x = in.nextDouble();
 
-	    System.out.println("Введите y: ");
+	    System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ y: ");
 
 	    double y = in.nextDouble();
 
-	    System.out.printf("Координаты x = %.3f  y = %.3f  \n", x, y);
+	    System.out.printf("ГЉГ®Г®Г°Г¤ГЁГ­Г ГІГ» x = %.3f  y = %.3f  \n", x, y);
 
 	    boolean bool = false;
 
@@ -39,7 +39,7 @@ public class Main
 
 	    }
 
-	    System.out.println("Точка принадлежит заданной области? " + bool);
+	    System.out.println("Г’Г®Г·ГЄГ  ГЇГ°ГЁГ­Г Г¤Г«ГҐГ¦ГЁГІ Г§Г Г¤Г Г­Г­Г®Г© Г®ГЎГ«Г Г±ГІГЁ? " + bool);
 
 	}
 
