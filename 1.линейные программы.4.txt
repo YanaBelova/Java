@@ -13,7 +13,7 @@ public class Main
 
     	        double rezult = (R*1000)%1000 + R1/1000.0;
 
-		System.out.println("Данное число:  " + R  + "\nРезультат работы программы:  " + rezult);
+		System.out.println("Г„Г Г­Г­Г®ГҐ Г·ГЁГ±Г«Г®:  " + R  + "\nГђГҐГ§ГіГ«ГјГІГ ГІ Г°Г ГЎГ®ГІГ» ГЇГ°Г®ГЈГ°Г Г¬Г¬Г»:  " + rezult);
 
 	}
 
