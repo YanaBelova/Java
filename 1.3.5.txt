@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+
+public class Main
+{
+
+	public static void main(String[] args) {
+
+	    Scanner in = new Scanner(System.in);
+
+	    System.out.println("Input number e: ");
+
+            double e = in.nextDouble();
+
+            boolean checking = true;
+
+            double sum = 0;
+
+            int n = 0;
+
+	    while (checking){
+
+	        double value = (1/Math.pow(2,n)) + (1/Math.pow(3,n));
+
+	        n++;
+	        if (value < e){
+
+	            checking = false;
+
+	        }
+
+	        if (checking){
+
+	            sum += value;
+
+	        }
+
+	    }
+
+	    System.out.println("Summa is " + sum);
+
+	}
+
+}

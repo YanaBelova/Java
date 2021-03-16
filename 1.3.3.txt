@@ -1,0 +1,20 @@
+public class Main
+{
+
+	public static void main(String[] args) {
+
+		long sum_of_squares = 0L;
+
+		for(int i = 1; i <= 100; i++)
+
+		{
+
+		    sum_of_squares += Math.pow(i,2);
+
+		}
+
+		System.out.println("Summ of of the first hundred numbers squares is " + sum_of_squares);
+
+	}
+
+}

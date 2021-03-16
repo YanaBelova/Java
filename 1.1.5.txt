@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class Main
+{
+
+	public static void main(String[] args) 
+	{
+
+	    Scanner in = new Scanner(System.in);
+
+	    int time = in.nextInt();
+            System.out.println(time + "\n");
+
+	    int ours = time/3600;
+
+	    int min = (time - ours*3600)/60;
+
+	    time = time - ours*3600-min*60;
+
+		if (ours<=9)
+
+		System.out.print("0"+ours + "ч");
+
+		else
+
+		System.out.print(ours + "ч");
+
+		
+if (min<=9)
+
+		System.out.print("0" + min + "мин");
+
+		else
+
+		System.out.print(min + "мин");
+
+		
+if (time<=9)
+
+		System.out.print("0" + time + "с");
+
+		else
+
+		System.out.print(time + "с");
+
+	}
+
+}

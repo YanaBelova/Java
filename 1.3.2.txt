@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+
+public class Main
+{
+
+  public static void main (String[]args)
+  {
+
+
+    Scanner in = new Scanner (System.in);
+
+    System.out.println("Input a:");
+
+    double a = in.nextDouble ();
+
+    System.out.println("Input b:");
+
+    double b = in.nextDouble ();
+
+    System.out.println("Input h:");
+
+    double h = in.nextDouble();
+
+    double function_value = 0;
+
+    for (double x =a; x<= b; x += h)
+
+    {
+        if( x > 2)
+
+            function_value = function_value + x;
+        
+
+             if ( x <= 2)
+
+            function_value = function_value + (-x);
+       
+    }
+
+    System.out.println("Function value on the segment [" + a + ";"+ b + "] with a step " + h + " is " + function_value);
+
+    System.exit(0);
+
+  }
+
+}
