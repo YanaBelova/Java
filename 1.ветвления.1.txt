@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+       Scanner in = new Scanner(System.in);
+       System.out.println("Ïåðâûé óãîë òðåóãîëüíèêà= ");
+       double angle_1 = in.nextDouble();
+       System.out.println("Âòîðîé óãîë òðåóãîëüíèêà= ");
+       double angle_2 = in.nextDouble();
+       String existence_of_a_triangle = (angle_2 + angle_1 < 180)?"Òðåóãîëüíèê ñóùåñòâóåò" : "Òðåóãîëüíèê íå ñóùåñòâóåò";
+System.out.println(existence_of_a_triangle);
+}
+}
