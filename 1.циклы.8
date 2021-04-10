@@ -1,0 +1,55 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Main
+{
+
+public static void Numbers (int number, ArrayList<Integer> list)
+{
+
+do
+{
+int chislo = number%10;
+list.add(chislo);
+number = number/10;
+}
+while (number>=1);
+
+do
+{
+int chislo = number%10;
+number = number/10;
+}
+while (number>=1);
+
+}
+
+
+public static void main(String[] args) {
+Scanner in = new Scanner(System.in);
+
+ArrayList<Integer> numbersOfFirstNumber = new ArrayList<>();
+ArrayList<Integer> numbersOfSecondNumber = new ArrayList<>();
+
+System.out.println("Введите первое число: ");
+int first_number = in.nextInt();
+System.out.println("Введите второе число: ");
+int second_number = in.nextInt();
+Numbers(first_number, numbersOfFirstNumber);
+
+System.out.println();
+Numbers(second_number, numbersOfSecondNumber);
+
+System.out.println("Повторяющиеся цифры: ");
+
+for (int i = 0; i< numbersOfFirstNumber.size(); i++)
+{
+    for (int j = 0; j < numbersOfSecondNumber.size(); j++)
+    {
+        if (numbersOfFirstNumber.get(i).equals(numbersOfSecondNumber.get(j)))
+        System.out.println(numbersOfFirstNumber.get(i));
+    }
+}
+}
+}
