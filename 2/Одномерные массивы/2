@@ -1,0 +1,21 @@
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner in = new Scanner(System.in);
+		int[] numbers = new int[] {1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29};
+		System.out.println("Input Z: ");
+		int z = in.nextInt();
+		int counter = 0;
+		for (int i = 0; i < numbers.length; i++){
+		 if (numbers[i] > z){
+		     numbers[i] = z;
+		     counter++;
+		 }
+		 System.out.println(numbers[i]);
+		}
+		System.out.println("number of replacements: " + counter);
+	}
+}
