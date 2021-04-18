@@ -1,0 +1,43 @@
+class Array {
+    public static int[] swap(int[] array){
+        int max = array[0];
+		int indexmax = 0;
+		int indexmin = 0;
+		int min = array[0];
+		
+		for (int i = 0; i < array.length; i++){
+		    if (max < array[i]){
+		    max = array[i];
+		    indexmax = i;}
+		    if (min > array[i]){
+		    min = array[i];
+		    indexmin = i;}
+		}
+		    System.out.println("Max element is " + max + "\nMin element is " + min);
+		    
+		    int numberous = array[indexmax];
+		    array[indexmax] = array[indexmin];
+	    	array[indexmin] = numberous;
+		
+		return array;
+    }
+}  
+
+
+
+public class Main
+{
+    
+    public static void console (int[] array)
+    {
+        for (int i = 0; i < array.length; i++)
+        System.out.println(array[i]);
+    }
+    
+	public static void main(String[] args) {
+		int[] numbers = new int[] {2, 54, 23, 8, 19, 42, 72, 11, 25, 41, 1};
+		Array array = new Array();
+		int[] numberous = array.swap(numbers);
+		console(numberous);
+	}
+}
