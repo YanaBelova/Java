@@ -1,0 +1,28 @@
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner in = new Scanner(System.in);
+	    System.out.println("Input N (length of array): ");
+		int N = in.nextInt();
+		int[] numbers = new int[N];
+		int zeroElementCounter = 0;
+		int negativeElementCounter = 0;
+		int pozitiveElementCounter = 0;
+		 for (int i = 0; i < numbers.length; i++){
+		 numbers[i] = (int) (5 + Math.random()*-10);
+		 System.out.println(numbers[i]);
+		 if (numbers[i] == 0)
+		     zeroElementCounter++;
+		 
+		 if (numbers[i] < 0)
+		     negativeElementCounter++;
+		     
+		 if (numbers[i] > 0)
+		     pozitiveElementCounter++;
+		 }
+       System.out.println("Number of pozitive elements: " + pozitiveElementCounter + "\nNumber of zero elements: " + zeroElementCounter + "\nNumber of negative elements: " + negativeElementCounter);
+	}
+}
